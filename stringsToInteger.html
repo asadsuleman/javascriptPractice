@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stringsToInteger</title>
+</head>
+
+<body>
+
+    <script>
+        // ...JavaScript assigns the user's answer to currentAge as a string. Her entry, 
+        //  let's say 32, may look like a number to you, but to JavaScript it's a string: "32".
+
+
+        var age = prompt("enter your age")
+        console.log("client age", age); //here its showing age  as a string
+
+        console.log("all things being + - * / by 2");
+
+        var plus = age + 2;
+        console.log("addition", plus); //it didnot work it taking age as a string
+
+        var minus = age - 2;
+        console.log("using subtraction", minus);
+
+        var multiply = age * 2;
+        console.log("multiplication", multiply);
+
+        var division = age / 2;
+        console.log("division", division);
+
+
+        var parseInteger = parseInt(age) + 2; //first converted string to num and then add 2 .
+        console.log("using parseInt funtion for addition", parseInteger);
+
+
+        // parseInt converts all strings, including strings comprising floating-point numbers, to
+        // integers. And shocking but true: It it doesn't round. It simply lops off the decimals. In the
+        // following statement, myInteger is assigned not 2 as you might expect, but 1.
+
+        var myInt = parseInt("1.999");
+        console.log("it close to two but showing one", myInt);
+
+
+        // To preserve any decimal values, use parseFloat . In the following statement
+        // myFractional is assigned 1.9999.
+
+        myFrac = parseFloat("1.999");
+        console.log("parseFloat showing full assignd value", myFrac);
+
+        // 'Number' This handy conversion tool converts a string representing
+        //  an integer or a floating-point number to a number that's identical 
+        //  to the one inside the parentheses.
+
+        var intString = ("24");
+        console.log(intString);
+
+        var num = Number(intString);
+        console.log("using 'Number' function to convert a string in num", num);
+
+        var floatingNumString = "24.9876";
+        console.log(floatingNumString);
+
+        var num1 = Number(floatingNumString);
+        console.log(num1);
+
+        var numberAsNumber = 1234;
+        console.log("its a number", numberAsNumber);
+
+        var numAsString = numberAsNumber.toString();
+        console.log("'toString' Funtion convert number to string", numAsString);
+
+
+        // 'toFixed' function is used for fixing a numbers's lenght .
+
+        var longNum = 12.334455;
+        console.log(longNum);
+
+        var fixedNum = longNum.toFixed(2) //it will show only 2 nums after point
+        console.log(fixedNum);
+    </script>
+
+
+</body>
+
+</html>

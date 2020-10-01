@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setting Input Field Value</title>
+</head>
+
+<body>
+
+    <p>we want an automated called function which will automaticaly filled the form</p>
+    <p>pretend zip code of cities are...</p>
+    <pre>
+        zip code of karachi is 1111
+        zip code of islamabd is 2222
+        zip code of quetta is 3333
+    </pre>
+
+    <form action="">
+        <!-- onBlur function is used for field value if 
+        client click outside the field it will perfom some 
+    action  . and we created a function for Onblur -->
+
+        zip: <br>
+        <input id="zip" type="text" onblur="fillcity();">
+        <br> city: <br>
+        <input id="city" type="text">
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // for automated form fill
+        // creating a fillcity function
+
+        function fillcity() {
+            var cityNAme;
+            var zipEntered = document.getElementById("zip").value; // in this zip value is equal to variable zipEntered
+
+            // now using conditional statment u can use 'switch' or 'if '
+
+            switch (zipEntered) {
+                case "1111":
+                    cityNAme = "karachi"
+                    break;
+                case "2222":
+                    cityNAme = "islamabad" // in this statment if value will be one pf these
+                    break; // the 'cityName' will be updated
+                case "3333":
+                    cityNAme = "Queta"
+                    break;
+
+
+
+
+            }
+
+            // now accsessing input field
+
+            document.getElementById("city").value = cityNAme; // now data of 'cityNAme' is equal to input field 
+        }
+    </script>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1>Manipulating images and text</h1>
+
+    <p>the case is if some one dont like the picture it shloud be invisbale by clicking on it</p>
+
+    <img id="photo" src="img/invisable.png" onclick="Invisible();">
+
+    <!-- first we have to create a new class and assign some CSS properties -->
+
+    <style>
+        .hidden {
+            display: none;
+            /* 
+        display none is property which means to show  nothing /hide the display
+        */
+        }
+    </style>
+
+    <script>
+        function Invisible() {
+
+            //accessing that image
+
+            document.getElementById("photo").className = "hidden" // here we assigning this a new class which we created
+
+
+        }
+    </script>
+
+
+
+    <br>
+    <br>
+    <br>
+    <h1>Reading and setting paragraph text</h1>
+    <br>
+    <br>
+    <p id="Pakistan"> Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia.
+        <a href="javascript:void(0);" onclick="expendpara();">click for more</a>
+
+        <!-- now we want if some one click on link the paragraph should be expended
+    for this we have to create a function -->
+    </p>
+
+    <script>
+        // for expending parahgraph
+
+        function expendpara() {
+            var Expend = "Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia. It is the world's fifth-most populous country with a population exceeding 212.2 million. It has the world's second-largest Muslim population. It is the 33rd-largest country by area, spanning 881,913 square kilometres."
+
+            // now accessing that paragraph for updates
+            document.getElementById("Pakistan").innerHTML = Expend;
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

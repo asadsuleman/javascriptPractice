@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage </title>
+</head>
+
+<body>
+
+    <!-- for accessing local storage in browers 
+    right clic to open inspect
+     go to application
+    select local storage 
+    and see all key and values -->
+
+    <h1>local Storage and its usage</h1>
+
+    <p>local storage is used for storing user data like name email and password user dont need to login again and again its help to save the data for loggin in again or so on.</p>
+
+    <p>key and value will be stored untill u remove it permenintaly other wise if u close the tab and re open the key value still be there </p>
+
+
+    <script>
+        // this is the syntax: localStorage.setItem("key", "value")  
+
+        localStorage.setItem("firstName", "Asad"); //we set  items menually 
+        localStorage.setItem("lastName", "Suleman");
+
+        let fname = localStorage.getItem('firstName'); //this is how to get itam and assign it to variable    
+        console.log(fname);
+
+
+
+
+        // for removing specific item : localStorage.removeitem("itemName/variableName");
+        //for removing all item permentaly : localStorage.clear();
+    </script>
+
+</body>
+
+</html>

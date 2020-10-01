@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genrating Random Numbers</title>
+</head>
+
+<body>
+
+
+    <script>
+        var randomNum = Math.random();
+        // //The function always delivers a 16-place decimal that ranges from 0.0000000000000000 to 0.9999999999999999.
+        console.log(randomNum);
+
+        //multiplied random num into 6 and add 1 
+        var multipliedNum = (randomNum * 6) + 1;
+        console.log("(multiplied by 6)    ", multipliedNum);
+
+        //now used floor funtions for  the lower nearest num upto 1 to 6
+        //if we use Math.ceil it will be 1 upto 7 
+        var dieNum = Math.floor(multipliedNum);
+        console.log(dieNum);
+    </script>
+
+</body>
+
+</html>

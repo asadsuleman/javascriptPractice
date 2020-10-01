@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in loops</title>
+</head>
+
+<body>
+
+
+    <h1>for in loop</h1>
+
+
+
+    <script>
+        // for in loop is basically used for objects 
+
+
+        let obj = {
+            a: "1",
+            b: "2",
+            c: "3"
+        }
+
+        for (let data in obj) { //here we used 'in'  for in Loop
+            console.log(data); // it only print keys of objects not there values
+            console.log(obj[data]); // it will print values  first called object and itsIndex  
+        }
+    </script>
+
+</body>
+
+</html>

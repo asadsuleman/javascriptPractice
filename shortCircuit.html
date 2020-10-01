@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Circuit</title>
+</head>
+
+<body>
+
+    <h1>short circuit</h1>
+
+    <script>
+        //short circuit is a conditional term it the condition is true the next
+        // code will execute if not the code gonna shortCircuit
+
+        let gender = "male";
+
+        //syntax
+
+        let sCircuit = (gender === "male") && " &&    it worked"; // if the condition is not true code will bhi shor circuit
+        console.log(sCircuit); //if the condition do not match answer will be false
+
+        //        this is use as or ||  
+        let or = (gender === "female") || "if first code is not ture then run this"
+        console.log(" ||     ", or);
+
+
+        // even u can run any function 
+
+        function func() {
+            console.log("function is working on shortCircuit");
+        }
+
+        let sCircuit2 = (gender === "male") && func();
+    </script>
+
+</body>
+
+</html>

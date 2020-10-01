@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> While Loop</title>
+</head>
+
+<body>
+
+
+    <script>
+        // case is if you are under 18 U cann't drive  car.
+        console.log("while loop");
+
+        var age = prompt("Enter Your Age")
+
+        // it take prompt as a string so we have to convert it itno Number
+
+        age = Number(age);
+
+        console.log("my age is  ", age);
+
+        //  syntax
+        var i = age;
+        while (i <= 17) { //here if i = less then 17 then its perform action but if i  is above 17 its not  gonna work beacuse this check conditon first
+            if (i >= 18) {
+                console.log("u can drive car");
+            } else {
+                console.log("u can not drive car");
+            }
+            i++;
+        }
+    </script>
+
+    <script>
+        // so we have another method called 'do while loop'
+
+        //syntax
+        console.log("do while loop");
+        i = age
+        do {
+            if (age >= 18) { //do while loop first perform action and check condition after it so it runs once and your code execute
+                console.log("yes u can drive car ");
+            } else {
+                console.log("sorry u still cann't drive car");
+            }
+            i++;
+        }
+        while (i <= 17);
+    </script>
+
+</body>
+
+</html>

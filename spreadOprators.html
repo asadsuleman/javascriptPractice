@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread oprators</title>
+</head>
+
+<body>
+
+    <h1>spread oprators</h1>
+
+    <script>
+        let obj = {
+            fname: "asad",
+            lname: "suleman",
+            skills: {
+                tool1: "HTML",
+                tool2: "CSS",
+                tool3: "JavaScript",
+            }
+        }
+
+        let newobj = obj
+            // console.log(newobj);
+
+        newobj.lname = "sarazai"; //this will be changed in both objects 'obj' and 'newobj'
+
+        console.log(newobj);
+
+
+
+
+        // if u want only newObj to be changed so u have to use spreadOprator which is represnted by three dots...
+
+
+        let newobj = {
+            ...obj //the value of obj not going to  be changed 
+        }
+        console.log(obj);
+
+        newobj.lname = "sarazai";
+
+        console.log(newobj);
+    </script>
+
+</body>
+
+</html>

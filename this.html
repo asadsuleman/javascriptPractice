@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" initial-scale=1.0">
+    <title>this example</title>
+</head>
+
+<body>
+    <h1>this </h1>
+    <h2>keyword</h2>
+
+
+    <script>
+        // 'this'  is equal to window 
+
+        const obj = {
+            name: "asad",
+            method: function fname() { // function in objects are called this
+                console.log(this); // here 'this === obj'   we can write this or obj both thing works 
+
+            }
+        }
+        obj.method(); // calling the object it shows compelete object
+
+        console.log(this); //  here this referes to global object which is 'window' if it is written alone
+    </script>
+</body>
+
+</html>

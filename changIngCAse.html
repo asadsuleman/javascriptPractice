@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changing Case</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        var CityCheck = prompt("write any pakistan's city name.")
+
+        CityCheck = CityCheck.toLocaleLowerCase();
+
+        var city = ["karachi", "islamabad", "pishawar", "haiderabad", "turbat", "gawadar", "lahore", "quetta"]
+
+
+
+        for (i = 0; i <= 7; i++) {
+            if (CityCheck === city[i]) {
+                alert("congratulations");
+            } else {
+                (CityCheck /= city[i])
+
+                alert("sorry its incorrect..!");
+                break;
+
+
+            }
+        }
+    </script>
+
+    <!-- we also can Convert users input to all UPPER CASE by using 'ToUpperCase' function    -->
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object in js</title>
+</head>
+
+<body>
+
+    <h1> Object In JavaScript </h1>
+
+    <!-- why we need objects..? -->
+    <!-- object in js make coding easier shorter and easy to understand  -->
+    <!-- if we wanna  create a chart create a object instead of
+    assigning values to variables   -->
+
+
+    <!-- syntax -->
+
+    <script>
+        var nameOfObject = {
+            properties: "their values",
+            multipleProperties: 23,
+
+
+        }
+        console.log(nameOfObject);
+
+
+
+        //we can also create make an function in objects or create a array
+
+
+        var data = {
+
+            fName: "Asad",
+            lName: "Suleman",
+            age: 20,
+            skilss: ["zero", "zero1", "zero2"],
+
+            fullName: function() {
+                return this.fName + " " + this.lName
+            }
+
+        }
+
+        console.log(data);
+        console.log(data.fullName()); // calling a object and its inner property for its value.
+    </script>
+
+
+</body>
+
+</html>

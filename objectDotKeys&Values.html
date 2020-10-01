@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object Dot Keys</title>
+</head>
+
+<body>
+
+    <h1>object dot keys and values</h1>
+
+
+
+    <script>
+        let myobj = {
+            name: "asad",
+            fname: "suleman",
+            address: {
+                house1: "karachi",
+                house2: "turbat"
+            }
+        }
+
+
+        // getting object keys 
+        let dotKeys = Object.keys(myobj); //syntax
+        let values1 = Object.values(myobj);
+        //
+        // console.log(dotKeys); // all the keys will be shown
+
+        console.log(dotKeys, values1);
+
+
+
+
+        //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX//
+
+        //object dot values
+
+        let obj = {
+            name: "asad",
+            sname: "sarazai",
+            skill: {
+                tool1: "HTML",
+                tool2: "CSS",
+            }
+        }
+
+
+        let dotValues = Object.values(obj);
+        // console.log(dotValues);
+    </script>
+
+</body>
+
+</html>

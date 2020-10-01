@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+
+<body>
+
+
+    <script>
+        //creating a function
+
+        function greetUser() {
+            var userName = prompt("Enter Your Name..!")
+            alert("Hello " + userName);
+
+
+        }
+
+        // calling a function 
+        greetUser();
+
+
+        // creating a function which tell current time.
+
+        function tellTime() {
+            var CurrentTime = new Date();
+            var hours = CurrentTime.getHours();
+            var minute = CurrentTime.getMinutes();
+            alert("Current Time Is:   " + hours + ":" + minute);
+        }
+
+        tellTime();
+
+        // creating a function with parameter
+
+        function sum(a, b) {
+            document.write(a + b + "<br>");
+        }
+
+        sum(30, 40);
+
+
+        // another 
+
+        function hello(fName, lName) {
+            alert("Hello " + fName + " " + lName);
+            document.write("Hello " + fName + " " + lName);
+
+        }
+        var name1 = prompt("enter your F.name");
+        var Lname = prompt("enter your last name");
+        hello(name1 + " " + Lname);
+
+
+        // return function
+
+        var number = 3;
+        var number2 = 3;
+
+        console.log(number, "multiply", number2);
+
+        function add(n1, n2) {
+            return n1 * n2; // the vale of n1 * n2 returned into add
+        }
+
+
+        var sum = add(number, number2); //returned of add is saved into sum variable
+        console.log("returned value  ", sum);
+
+        function multiply(n3, n4) {
+            return n3 * n4; //return vale goes intp multiply
+        }
+        var prom = prompt("enter a number");
+
+        console.log("users entered value ", prom);
+        var total = multiply(prom, sum); // this all value saved into total
+        console.log(total);
+    </script>
+
+</body>
+
+</html>

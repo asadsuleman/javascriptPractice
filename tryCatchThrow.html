@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error handling</title>
+</head>
+
+<body>
+
+    <h1>error handling </h1>
+    <ul>
+        <li>try</li>
+        <li>throw</li>
+        <li>catch</li>
+
+    </ul>
+
+
+    <script>
+        // if we dont want our apllication to be crashed or dont want an error in browser
+        // we put our code in 'try','catch' function if there is any error it will catch this
+
+
+        // SYNTAX 
+        try {
+            //what we want to try we put it here for testing or dont want our application to be crashed
+
+
+        } catch (variableName) {
+
+            //here we command some actions what to do if there is any error.
+        }
+
+
+        try {
+            aler("HELLO WORLD"); // we made a spelling mistake here but our app will not be crash .  
+        } catch (error1) { // error will come into this 'error1' variable 
+            console.log(error1); // error will be show in console as per our command and app is still running
+
+        }
+
+
+        // we can use these function in so many situations 
+        // we can make our own customize error 
+        // example
+
+        let clientAge = prompt("Enter your age ");
+
+        clientAge = Number(clientAge); //converted a string into num beacuse js take every prompt as a string
+        console.log("age of client is  ", clientAge);
+        try {
+            if (typeof(clientAge) !== Number); { //
+                // throw "do not write alphabetically"
+            }
+        } catch (error2) {
+            alert("please enter your age in numerical numbers");
+
+        }
+
+        i = clientAge // assigning i to client age
+        do {
+            if (clientAge >= 18) { //do while loop first perform action and check condition after it so it runs once and your code execute
+                console.log("congratulations you are adult  ");
+            } else {
+                console.log("you are still a kid");
+                break;
+            }
+            i++; //increament 
+        }
+        while (i <= 17); //condition
+    </script>
+
+</body>
+
+</html>

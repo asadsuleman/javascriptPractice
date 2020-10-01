@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literals</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        // old way to write templates and hard to understand
+        var name = "asad";
+        var age = 20;
+        var result = "my name is " + name + " and my age is " + age;
+        console.log(result);
+
+
+
+        // New method
+
+        const name1 = "mahaz";
+        const age2 = 10;
+        const result1 = `my name is ${name1} and my age ${age2}`; // remember here we used this ``` insted of this '''
+
+        console.log(result1);
+
+        function name3() {
+            return "Asad Suleman"
+        }
+
+        // we can access js by usind dollar isgn ${} in any stirng/integr/array ..
+
+        var testing = `my name is ${name3()}`;
+        console.log(testing);
+
+
+        // we also can do methametic expressions 
+
+        const name4 = `my name is ${name3()} and my age is ${12 + 8} `
+        console.log(name4); // age is will be 20 .
+    </script>
+
+</body>
+
+</html>

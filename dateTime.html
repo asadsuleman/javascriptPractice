@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time</title>
+
+</head>
+
+<body>
+
+
+    <script>
+        var currentDateTime = new Date();
+        console.log("(current date and time)", currentDateTime);
+
+        var day = currentDateTime.getDay();
+        console.log("(current day)", day); // but it show it as a number coz
+
+        //here sun = 0  and sat = 6
+        // for getting exact name
+
+        var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var now = new Date();
+        var theDay = now.getDay();
+        var nameOfToday = dayNames[theDay];
+
+        console.log("name of  day is", nameOfToday);
+    </script>
+
+
+
+
+</body>
+
+</html>

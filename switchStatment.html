@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch statmen</title>
+</head>
+
+<body>
+
+    <script>
+        //its work same like 'if' conditional statment but its syntax quit diffrrent 
+        // and easy to uderstand.
+
+        // the case is : are you covid-19 posative or negative  
+        var testResult = prompt(" Your Covid-19 Result is Positive , Negative?");
+
+
+        // if client enterd up in any case it convert it to lower case
+        testResult = testResult.toLocaleLowerCase();
+
+        switch (testResult) {
+            case "positive":
+                alert("Qurantine your self...");
+                break;
+            case "negative":
+                alert("Whoopee You Are Fine...");
+                break;
+
+            default:
+                alert("sorry i didn't understand");
+        }
+    </script>
+
+
+
+</body>
+
+</html>
