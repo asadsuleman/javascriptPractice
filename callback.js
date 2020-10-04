@@ -22,7 +22,7 @@
 
 
 
-     //          //valueOfPost doing itration here
+     //          //valueOfPost doing itration here down below
      //          posts.forEach((valueOfPosts) => { // forEach is used for running loop and ' ()=>  this is called callback function  '
 
      //              outPut += `<li>${posts.title}</li>` //assigned a empety variable to new value
@@ -35,6 +35,22 @@
 
 
      //  getPosts(); //calling the function
+
+     // creating another function
+     //  function updatedPost(post1) {
+     //     setTimeout(() => {
+     //         posts.push(post1);
+
+
+     //     }, 2000);
+     // }
+
+     // updatedPost({ title: "title three", body: "this is body text three" });
+
+
+     // now second function is not running because they both have diffrent time period to be print
+     // for this issue we use callback function
+
 
 
 
@@ -50,7 +66,7 @@
          let outPut = "";
          setTimeout(() => {
              posts.forEach((valueOfPosts) => {
-                 outPut += `<li>${valueOfPosts.title}</li>`
+                 outPut += `<br>${valueOfPosts.title}`
                  document.body.innerHTML = outPut;
              })
 
@@ -58,18 +74,19 @@
      }
 
 
-     getPosts();
+     //  getPosts();
 
-
-     function update() {
-
+     function updatedPost(post1, callback) {
          setTimeout(() => {
+             posts.push(post1);
 
-             posts.push({ title: "title one", body: "this is body text one" });
-             posts.forEach((post) => {
-                 callback();
+             callback();
 
-             })
 
          }, 2000);
      }
+
+     updatedPost({ title: "title three", body: "this is body text three" }, getPosts); //here we passed two arguments to parameters
+
+
+     // now its working perfectly
