@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async await</title>
+</head>
+
+<body>
+
+    <h1>Async Await</h1>
+
+
+    <script>
+        // creating a async function for getting posts
+        //syntax
+        const getPost = async() => {
+
+            // fetching posts from a server and await is used for break;
+            const response = await fetch("https://jsonplaceholder.typicode.com/posts")
+
+            const data = await response.json(); // here await is used for break , means do not run the next line until its not converted into json file thats what 'await' do
+
+            console.log('fetched posts are   ', response);
+
+            console.log('converted response to json ', data);
+        }
+
+        getPost();
+    </script>
+
+</body>
+
+</html>
