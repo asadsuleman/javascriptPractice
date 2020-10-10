@@ -10,6 +10,7 @@
 
 <body>
 
+    <div> <button id="time" onclick="func();">current time</button></div>
 
     <script>
         var currentDateTime = new Date();
@@ -27,6 +28,20 @@
         var nameOfToday = dayNames[theDay];
 
         console.log("name of  day is", nameOfToday);
+
+
+        // getting time
+
+
+        function func() {
+            const time1 = new Date;
+            console.log(time1);
+            const h = time1.getHours();
+            const m = time1.getMinutes();
+            const s = time1.getSeconds();
+            alert("The Current Time is " + h + ":" + m + ":" + s + "");
+
+        }
     </script>
 
 

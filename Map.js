@@ -51,3 +51,13 @@ const mapArrayObj = arrayObj.map((elements, indexValues) => {
     // return indexValues // it return index values
 });
 console.log(mapArrayObj);
+
+
+
+
+
+//extra
+
+const teachers = ['zia', 'amir', 'ahsan', 'khan']
+const titel = teachers.map((name, ali) => 'Mr. ' + name, "add");
+console.log(titel);

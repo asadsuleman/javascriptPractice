@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>default values</title>
+</head>
+
+<body>
+    <h1>default values</h1>
+
+
+    <script>
+        function message(name = "default value  ") { //here if the arguments is not passed then it select the default value
+            var msg = `Welocome ${name}`
+            console.log(msg);
+        }
+
+
+        message("givin value   ", "asad");
+        message();
+    </script>
+</body>
+
+</html>
