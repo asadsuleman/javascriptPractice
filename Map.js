@@ -43,9 +43,13 @@ const arrayObj = [
 
 ]
 
+  
+
 //created a map loop , elements is for values ,indexValue is for index , then arrow funtion with some desire actions
 const mapArrayObj = arrayObj.map((elements, indexValues) => {
     return elements // it return all key and values in vairable mapArratObj
+
+    
 
     // return elements.name  // it return all the names
     // return indexValues // it return index values
@@ -59,5 +63,5 @@ console.log(mapArrayObj);
 //extra
 
 const teachers = ['zia', 'amir', 'ahsan', 'khan']
-const titel = teachers.map((name, ali) => 'Mr. ' + name, "add");
-console.log(titel);
+const title = teachers.map((name, ali) => 'Mr. ' + name, "add");
+console.log(title);
